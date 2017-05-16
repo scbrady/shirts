@@ -50,7 +50,7 @@
             <script
                     src="https://checkout.stripe.com/checkout.js"
                     class="stripe-button add-cart item_add"
-                    data-key="pk_test_aQm9tZo8EN88bVtjp2zMcuz3"
+                    data-key="{{env('STRIPE_PUBLISHABLE')}}"
                     data-amount="{{$page->amount}}"
                     data-name="Modern Shoppe"
                     data-description="Clothes"
