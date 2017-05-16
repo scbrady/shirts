@@ -1,45 +1,69 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <title>@yield('title')</title>
+    <!-- Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">
-
-    <!-- Styles -->
+    <!-- CSS -->
     <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/initial.css">
     @yield('styles')
-    <style>
-        body {
-            font-family: 'Lato';
-        }
-    </style>
-</head>
-<body id="app-layout">
 
-<div class="container">
-    @yield('content')
+    <!-- JS -->
+    <script src="js/initial.js"></script>
+
+    <!--flex slider-->
+    <script>
+      // Can also be used with $(document).ready()
+      $(window).load(function() {
+        $('.flexslider').flexslider({
+          animation: "slide",
+          controlNav: "thumbnails"
+        });
+      });
+    </script>
+</head>
+<body>
+<!--header-->
+<div class="header">
+    <div class="header-two navbar navbar-default">
+        <div class="container">
+            <div class="nav navbar-nav logo">
+                <h1><a href="index.html">Modern <b>Shoppe</b><span class="tag">Everything for Kids world </span> </a></h1>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
 </div>
 
-<div class="footer-spacing"></div>
+<div class="single">
+    <div class="container">
+        @yield('content')
+    </div>
+</div>
 
-<!-- JavaScripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script>
-  $.ajaxSetup({
-    headers: {
-      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-    }
-  });
-</script>
+<!--footer-->
+<div class="footer">
+    <div class="container">
+        <div class="footer-info">
+            <div class="col-md-4 footer-grids">
+                <h4 class="footer-logo"><a href="index.html">Modern <b>Shoppe</b> <span class="tag">Everything for Kids world </span> </a></h4>
+                <p>© 2016 Modern Shoppe . All rights reserved | Design by <a href="http://w3layouts.com" target="_blank">W3layouts</a></p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
 @yield('scripts')
- <script src="/js/app.js"></script>
+<script src="/js/app.js"></script>
 </body>
 </html>

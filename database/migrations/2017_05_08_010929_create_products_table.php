@@ -17,8 +17,9 @@ class CreateProductsTable extends Migration
             $table->increments('id');
             $table->integer('page_id')->unsigned();
 
+            $table->string('title');
             $table->string('provider');
-            $table->string('provider_id');
+            $table->string('provider_id')->nullable();
             $table->json('extra')->nullable();
 
             $table->timestamps();
