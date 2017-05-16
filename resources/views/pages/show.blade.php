@@ -18,7 +18,7 @@
     <div class="col-md-6 single-top-left simpleCart_shelfItem">
         <h3>{{$page->title}}</h3>
         <h6 class="item_price">${{number_format($page->amount / 100, 2)}}</h6>
-        <p>{{$page->description}}</p>
+        <p>{!!$page->description!!}</p>
 
         @if (count($errors) > 0)
             <div class="alert alert-danger">

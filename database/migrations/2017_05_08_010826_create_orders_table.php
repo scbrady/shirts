@@ -30,7 +30,7 @@ class CreateOrdersTable extends Migration
 
             $table->integer('amount');
             $table->string('stripe_id');
-            $table->boolean('fulfilled');
+            $table->boolean('fulfilled')->default(0);
 
             $table->timestamps();
         });
