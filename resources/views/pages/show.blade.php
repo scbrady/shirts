@@ -15,7 +15,7 @@
             </ul>
         </div>
     </div>
-    <div class="col-md-6 single-top-left simpleCart_shelfItem">
+    <div class="col-md-5 col-md-offset-1 single-top-left simpleCart_shelfItem">
         <h3>{{$page->title}}</h3>
         <h6 class="item_price">${{number_format($page->amount / 100, 2)}}</h6>
         <div class="desc">{!!$page->description!!}</div>
