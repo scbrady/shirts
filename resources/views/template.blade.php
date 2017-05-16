@@ -18,18 +18,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     @yield('styles')
 
     <!-- JS -->
-    <script src="js/initial.js"></script>
-
-    <!--flex slider-->
-    <script>
-      // Can also be used with $(document).ready()
-      $(window).load(function() {
-        $('.flexslider').flexslider({
-          animation: "slide",
-          controlNav: "thumbnails"
-        });
-      });
-    </script>
+    <script src="/js/initial.js"></script>
 </head>
 <body>
 <!--header-->

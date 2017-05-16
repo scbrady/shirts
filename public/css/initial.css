@@ -23,7 +23,7 @@ body a{
 }
 h1,h2,h3,h4,h5,h6{
     margin:0;
-    font-family: 'Pompiere', cursive;
+    font-family: proxima-nova, sans-serif;
 }
 p{
     margin:0;
@@ -180,6 +180,23 @@ span.tag {
     border-color: #ff590f;
 }
 /*--//single-page--*/
+
+.confirm {
+    text-align: center;
+    margin: 100px 0;
+}
+.confirm h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+.confirm h2 {
+    margin-top: 25px;
+    font-size: 22px;
+    font-weight: 700;
+}
+.confirm hr {
+    margin: 35px 0;
+}
 
 
 /*---- responsive-design -----*/

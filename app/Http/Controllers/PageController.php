@@ -86,7 +86,7 @@ class PageController extends Controller
         }
 
 
-        Order::create([
+        $order = Order::create([
             'page_id' => $page->id,
             'name' => $request->stripeShippingName,
             'email' => $request->stripeEmail,
@@ -99,5 +99,7 @@ class PageController extends Controller
             'amount' => $page->amount * $request->quantity,
             'stripe_id' => $charge->id,
         ]);
+
+        return redirect('/confirmation/'.$order->id);
     }
 }
