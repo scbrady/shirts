@@ -88,25 +88,4 @@ ul.flex-direction-nav {
         width: 29%;
         left: -23%;
     }
-    .single-top-left h3 {
-        font-size: 1.3em;
-    }
-    .single-info .single-rating p {
-        font-size: 0.9em;
-    }
-    .single-info h6 {
-        font-size: 1.4em;
-    }
-    .single-info p {
-        font-size: 0.85em;
-    }
-    .quantity input.item_quantity {
-        padding: 4px 0;
-    }
-    .footer-grids p {
-        font-size: 0.87em;
-    }
-    .footer-grids h3 {
-        font-size: 2.1em;
-    }
 }

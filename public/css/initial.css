@@ -10,7 +10,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 body{
     margin:0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background: #fff;
 }
 body a{
@@ -23,7 +23,7 @@ body a{
 }
 h1,h2,h3,h4,h5,h6{
     margin:0;
-    font-family: proxima-nova, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 p{
     margin:0;
@@ -64,7 +64,6 @@ span.tag {
     display: block;
     font-size: .3em;
     color: #999;
-    font-family: 'Raleway', sans-serif;
     letter-spacing: 1px;
     margin-top: 6px;
     font-weight: 400;
@@ -133,17 +132,15 @@ span.tag {
     margin-left:16%;
     width: 34%;
 }
-.single-top-left h3 {
-    text-transform: uppercase;
-    font-size: 1.8em;
-    font-weight: 900;
-    color: #00a6d6;
+.single-top-left h1 {
+    color: #555555;
+    font-size: 28px;
+    font-weight: 200;
 }
 .single-info h6 {
-    font-size: 2em;
-    color: #353F49;
-    font-weight: 700;
-    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-top: 7px;
 }
 .desc {
     font-size: 1em;
@@ -156,30 +153,14 @@ span.tag {
     color: #FF590F;
     font-weight: 700;
 }
-.quantity input.item_quantity {
-    width: 50px;
-    height: inherit;
-    display: inline-block;
-    margin: 0px 0px 0 10px;
-    padding: 7px 0;
-    outline: none;
-    text-align: center;
-    font-size: 1em;
-    color: #999;
+
+#buyBtn {
+    display: block;
+    margin: 25px 0 0;
 }
-.btn_form a {
-    border: 1px solid rgb(133, 139, 145);
-    padding: 0.8em 2em;
-    display: inline-block;
-    text-decoration: none;
-    color: #353F49;
-    font-size: 0.9em;
-    font-weight: 600;
-    margin: 1em 0;
-}
-.btn_form a:hover{
-    color: #ff590f;
-    border-color: #ff590f;
+
+.form-group label {
+    margin-top: 10px;
 }
 /*--//single-page--*/
 
@@ -240,50 +221,22 @@ span.tag {
         width: 50%;
         margin: auto;
     }
-    .single-top-left h3 {
+    .single-top-left h1 {
         margin-top: 1.5em;
-    }
-    .single-info h6 {
-        font-size: 1.8em;
     }
     .single-info {
         padding: 4em 0 1em;
-    }
-}
-@media(max-width:767px){
-    button.navbar-toggle {
-        border-color: #F07818 !important;
-        background-color: #F07818;
-    }
-    button.navbar-toggle {
-        margin-right: 48%;
-    }
-    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-        background-color: #F07818;
-    }
-    .navbar-default .navbar-toggle .icon-bar {
-        background-color: #F2F6F7;
-    }
-    .navbar-nav > li {
-        display: block;
-    }
-    .navbar-nav {
-        margin: 0;
-    }
-    .navbar-default .navbar-nav > li > a {
-        padding: 0.8em 0.8em;
-        font-size: 1em;
     }
 }
 @media(max-width:768px){
     .logo h1 {
         font-size: 2.5em;
     }
+    #buyBtn {
+        width: 100%;
+    }
 }
 @media(max-width:640px){
-    .row h4 {
-        margin-bottom: 0;
-    }
     .footer {
         padding: 2.5em 0;
     }
@@ -300,12 +253,6 @@ span.tag {
     .footer-grids ul li a {
         font-size: 0.9em;
     }
-    .single-info h6 {
-        font-size: 1.5em;
-    }
-    .single-info p {
-        font-size: 0.9em;
-    }
 }
 @media(max-width:480px){
     .logo h1 {
@@ -318,14 +265,8 @@ span.tag {
         margin-left: 18%;
         width: 75%;
     }
-    .single-top-left h3 {
+    .single-top-left h1 {
         font-size: 1.5em;
-    }
-    .single-rating {
-        margin: 0.8em 0;
-    }
-    .single-info p {
-        margin: 0.5em 0;
     }
 }
 @media(max-width:414px){
@@ -344,15 +285,6 @@ span.tag {
     span.tag {
         font-size: .35em;
         letter-spacing: 0px;
-    }
-    button.navbar-toggle {
-        margin-right: 41%;
-    }
-    .navbar {
-        min-height: 46px;
-    }
-    .navbar-toggle {
-        padding: 7px 8px;
     }
     .footer {
         padding: 2em 0;
@@ -465,26 +397,5 @@ ul.flex-direction-nav {
     .flex-control-nav {
         width: 29%;
         left: -23%;
-    }
-    .single-top-left h3 {
-        font-size: 1.3em;
-    }
-    .single-info .single-rating p {
-        font-size: 0.9em;
-    }
-    .single-info h6 {
-        font-size: 1.4em;
-    }
-    .single-info p {
-        font-size: 0.85em;
-    }
-    .quantity input.item_quantity {
-        padding: 4px 0;
-    }
-    .footer-grids p {
-        font-size: 0.87em;
-    }
-    .footer-grids h3 {
-        font-size: 2.1em;
     }
 }
