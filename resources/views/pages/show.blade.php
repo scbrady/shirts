@@ -30,8 +30,17 @@
             </div>
         @endif
 
-        <form action="{{url()->current()}}" method="POST">
+        <form id="purchaseForm" action="{{url()->current()}}" method="POST">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+            <input type="hidden" name="stripeToken">
+            <input type="hidden" name="stripeEmail">
+            <input type="hidden" name="stripeShippingName">
+            <input type="hidden" name="stripeShippingAddressLine1">
+            <input type="hidden" name="stripeShippingAddressCity">
+            <input type="hidden" name="stripeShippingAddressState">
+            <input type="hidden" name="stripeShippingAddressZip">
+            <input type="hidden" name="stripeShippingAddressCountryCode">
 
             <div class="form-group">
                 @foreach($page->products as $product)
@@ -97,9 +106,17 @@
         zipCode: true,
         billingAddress: true,
         shippingAddress: true,
-        token: function(token) {
-          // You can access the token ID with `token.id`.
-          // Get the token ID to your server-side code for use.
+        token: function(token, args) {
+          $('[name="stripeToken"]').val(token.id);
+          $('[name="stripeEmail"]').val(token.email);
+          $('[name="stripeShippingName"]').val(args.shipping_name);
+          $('[name="stripeShippingAddressLine1"]').val(args.shipping_address_line1);
+          $('[name="stripeShippingAddressCity"]').val(args.shipping_address_city);
+          $('[name="stripeShippingAddressState"]').val(args.shipping_address_state);
+          $('[name="stripeShippingAddressZip"]').val(args.shipping_address_zip);
+          $('[name="stripeShippingAddressCountryCode"]').val(args.shipping_address_country_code);
+
+          $("#purchaseForm").submit();
         }
       });
 
