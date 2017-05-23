@@ -32,7 +32,6 @@ class PageController extends Controller
             'stripeShippingAddressZip' => 'required',
             'stripeShippingAddressCountryCode' => 'required',
 
-            'quantity' => 'required',
             'extra' => 'required'
         ], ['stripeShippingAddressState.required' => 'Please enter a valid zip code.']);
         return $this->processPrintAura($request, $page);
@@ -95,8 +94,8 @@ class PageController extends Controller
             'state' => $request->stripeShippingAddressState,
             'zip' => $request->stripeShippingAddressZip,
             'extra' => $extra,
-            'quantity' => $request->quantity,
-            'amount' => $page->amount * $request->quantity,
+            'quantity' => 1,
+            'amount' => $page->amount,
             'stripe_id' => $charge->id,
         ]);
 

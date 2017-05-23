@@ -61,11 +61,7 @@
             <div class="clearfix"></div>
 
             <div class="form-group">
-                <div class="col-sm-2">
-                    <label>Qty</label>
-                    <input min="1" type="number" value="1" name="quantity" class="form-control">
-                </div>
-                <div class="col-sm-10">
+                <div class="col-sm-12">
                     <button id="buyBtn" class="btn btn-lg btn-success">Buy Now</button>
                 </div>
             </div>
