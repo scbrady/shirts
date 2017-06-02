@@ -169,6 +169,12 @@ body a:hover{
         margin: auto;
         text-align: center;
     }
+    .single-top-left h1 {
+        font-weight: normal;
+    }
+    .single-info h6 {
+        font-weight: normal;
+    }
 }
 @media(max-width:480px){
     .logo img {
