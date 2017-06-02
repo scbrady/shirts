@@ -25,8 +25,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="header">
     <div class="header-two navbar navbar-default">
         <div class="container">
-            <div class="nav navbar-nav logo">
-                <h1><a href="index.html">Modern <b>Shoppe</b><span class="tag">Everything for Kids world </span> </a></h1>
+            <div class="logo">
+                <img src="/img/sdl.png" />
             </div>
             <div class="clearfix"> </div>
         </div>
@@ -42,11 +42,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--footer-->
 <div class="footer">
     <div class="container">
-        <div class="footer-info">
-            <div class="col-md-4 footer-grids">
-                <h4 class="footer-logo"><a href="index.html">Modern <b>Shoppe</b> <span class="tag">Everything for Kids world </span> </a></h4>
-                <p>© 2016 Modern Shoppe . All rights reserved | Design by <a href="http://w3layouts.com" target="_blank">W3layouts</a></p>
-            </div>
+        <div class="footer-content">
+            <img class="footer-logo" src="/img/sdl.png" />
+            <p>© 2017 Spark Deals. All rights reserved</p>
             <div class="clearfix"></div>
         </div>
     </div>
