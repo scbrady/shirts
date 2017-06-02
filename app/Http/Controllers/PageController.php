@@ -10,9 +10,19 @@ use Stripe\Charge as StripeCharge;
 
 class PageController extends Controller
 {
+    public function random(Request $request)
+    {
+        $page = Page::inRandomOrder()->first();
+        return redirect("/$page->slug");
+    }
+
     public function show(Request $request, $slug)
     {
         $page = Page::where('slug', '=', $slug)->first();
+
+        if(!$page)
+            return redirect('/');
+
         $page->load('products', 'pictures');
         return view('pages.show', ['page' => $page]);
     }
