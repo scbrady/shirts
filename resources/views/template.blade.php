@@ -19,6 +19,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
     <!-- JS -->
     <script src="/js/initial.js"></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
 <!--header-->
