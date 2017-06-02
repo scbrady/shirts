@@ -62,7 +62,7 @@
 
             <div class="form-group">
                 <div class="col-sm-12">
-                    <button id="buyBtn" class="btn btn-lg btn-success">Buy Now</button>
+                    <button id="buyBtn" class="btn btn-lg">Buy Now</button>
                 </div>
             </div>
 
@@ -94,10 +94,10 @@
     <!--stripe-->
     <script>
       var handler = StripeCheckout.configure({
-        name: 'Modern Shoppe',
+        name: 'Spark Deals',
         description: '{{ $page->title }}',
         key: '{{env('STRIPE_PUBLISHABLE')}}',
-        image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+        image: '/img/spark.png',
         locale: 'auto',
         zipCode: true,
         billingAddress: true,

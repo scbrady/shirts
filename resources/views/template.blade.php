@@ -13,6 +13,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <!-- CSS -->
+    {{--<link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">--}}
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/initial.css">
     @yield('styles')

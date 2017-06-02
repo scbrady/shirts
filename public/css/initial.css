@@ -88,6 +88,10 @@ body a:hover{
 #buyBtn {
     display: block;
     margin: 25px 0 0;
+
+    color: #fff;
+    background-color: #00A8D3;
+    border-color: #0092b7;
 }
 
 .form-group label {
